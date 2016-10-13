@@ -1,0 +1,19 @@
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/generated/uapi/linux/version.h
+  CHK     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h' не требует обновления.
+  CALL    scripts/checksyscalls.sh
+  CC      scripts/mod/devicetable-offsets.s
+  GEN     scripts/mod/devicetable-offsets.h
+  HOSTCC  scripts/mod/file2alias.o
+  HOSTLD  scripts/mod/modpost
+  CHK     include/generated/compile.h
+/home/serinity/Android/kernel/sprout/drivers/misc/mediatek/fmradio/Makefile:10: feature_option="MT6627_FM"
+/home/serinity/Android/kernel/sprout/drivers/misc/mediatek/fmradio/Makefile:75: MT6627_FM
+/home/serinity/Android/kernel/sprout/drivers/misc/mediatek/fmradio/Makefile:99: core/fm_module.o core/fm_main.o core/fm_config.o core/fm_rds_parser.o core/fm_patch.o core/fm_utils.o core/fm_link.o core/fm_eint.o mt6627/pub/mt6627_fm_lib.o mt6627/pub/mt6627_fm_rds.o mt6627/pub/mt6627_fm_cmd.o mt6627/pub/mt6627_fm_config.o
+drivers/misc/mediatek/gpu/mt6582/mali/mali
+/home/serinity/Android/kernel/sprout/drivers/misc/mediatek/ssw/Makefile:5: "SSW_DIR=/home/serinity/Android/kernel/sprout/drivers/misc/mediatek/ssw/ssw_singlessw_exist=y"
+  Kernel: arch/arm/boot/Image is ready
+  LD      arch/arm/boot/compressed/vmlinux
+  OBJCOPY arch/arm/boot/zImage
+  Kernel: arch/arm/boot/zImage is ready
